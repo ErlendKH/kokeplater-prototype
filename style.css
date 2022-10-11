@@ -1,5 +1,10 @@
 * {
-    box-sizing: border-box;
+/*     box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0; */
+
     font-family: "Arial", sans-serif;
     font-size: 1.1rem;
     margin: 0;
@@ -8,6 +13,51 @@
 
 p {
     color: gray;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    text-align: left;
+}
+
+.container img {
+    /* height: 100vh; */
+    /* width: 100%; */
+
+    height: 700px;
+    width: 700px;
+}
+
+.buttons {
+    position: absolute;
+}
+
+.buttons-top-left {
+    /* position: absolute; */
+    left: 95px;
+    bottom: 140px;
+}
+
+.buttons-top-right {
+    /* position: absolute; */
+    left: 410px;
+    bottom: 140px;
+}
+
+.buttons-bottom-left {
+    /* position: absolute; */
+    left: 95px;
+    bottom: 80px;
+}
+
+.buttons-bottom-right {
+    /* position: absolute; */
+    left: 410px;
+    bottom: 80px;
 }
 
 .boundary {
@@ -45,22 +95,6 @@ p {
     border-style: dashed; */
 }
 
-.background {
-    background-color: black;
-    background-image: url("kokeplater.png");
-    background-repeat: no-repeat;
-    background-size: 100vh;
-    background-position: center top;
-
-    width: 100vw;
-    height: 100vh;
-
-    border: 5px;
-    border-radius: 5px;
-    border-color: blue;
-    border-style: dashed;
-}
-
 .content {
 
     /* background-size: 100vh; */
@@ -88,7 +122,38 @@ p {
     border-style: dashed; */
 }
 
-.knapper {
+.background {
+    /*     background-color: black;
+        background-image: url("kokeplater.png");
+        background-repeat: no-repeat;
+        background-size: 100vh;
+        background-position: center top;
+    
+        width: 100vw;
+        height: 100vh;
+    
+        border: 5px;
+        border-radius: 5px;
+        border-color: blue;
+        border-style: dashed; */
+    
+    
+    /*     src: url("kokeplater.png");
+        height: 500px;
+        width: 500px; */
+    
+}
+
+/* .background img {
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: auto;
+    
+    z-index: -1;
+} */
+
+/* .knapper {
 
     display: inline-flex;
     direction: row;
@@ -116,3 +181,4 @@ p {
     background-color: gray;
     color: white;
 }
+ */
