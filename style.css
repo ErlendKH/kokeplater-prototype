@@ -16,7 +16,12 @@ p {
 }
 
 body {
+    background-color: #111111;
+}
+
+div button {
     background-color: black;
+    color: gray;
 }
 
 .container {
@@ -30,6 +35,31 @@ body {
 
     height: 700px;
     width: 700px;
+}
+
+.values {
+    position: absolute;
+    color: black;
+}
+
+.values-top-left {
+    left: 325px;
+    bottom: 130px;
+}
+
+.values-top-right {
+    left: 360px;
+    bottom: 130px;
+}
+
+.values-bottom-left {
+    left: 325px;
+    bottom: 90px;
+}
+
+.values-bottom-right {
+    left: 360px;
+    bottom: 90px;
 }
 
 .buttons {
@@ -58,6 +88,62 @@ body {
     /* position: absolute; */
     left: 410px;
     bottom: 80px;
+}
+
+.bottom-buttons {
+    position: absolute;
+
+/*     border: 5px;
+    border-radius: 5px;
+    border-color: red;
+    border-style: dashed; */
+
+    height: 32px;
+    width: 96px;
+
+    left: 300px;
+    bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-buttons img {
+    height: 100%;
+    width: auto;
+}
+
+#power-switch {
+
+}
+
+#lock {
+
+}
+
+.plug {
+    position: absolute;
+
+/*     height: 32px;
+    width: 32px; */
+
+    /* width: 200px; */
+
+    bottom: 10px;
+    left: 700px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plug img {
+    height: 32px;
+    width: 32px;
+}
+
+.plug p {
+    margin-left: 10px;
 }
 
 .boundary {
