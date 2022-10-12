@@ -179,7 +179,10 @@ div button {
 }
 
 .plug {
+
     position: absolute;
+
+    display: none;
 
 /*     height: 32px;
     width: 32px; */
@@ -197,10 +200,14 @@ div button {
 .plug img {
     height: 32px;
     width: 32px;
+    
+    display: none;
 }
 
 .plug p {
     margin-left: 10px;
+
+    display: none;
 }
 
 .boundary {
