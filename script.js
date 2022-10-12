@@ -542,10 +542,10 @@ function turnOn(){
     $("#power-indicator").attr('src', 'circle-small-red.png');
 
     // By default, set all values to 0:
-    $('#tl0').css('color', 'red');
-    $('#tr0').css('color', 'red');
-    $('#bl0').css('color', 'red');
-    $('#br0').css('color', 'red');
+    $('#tl0').css('color', colorButtonActive);
+    $('#tr0').css('color', colorButtonActive);
+    $('#bl0').css('color', colorButtonActive);
+    $('#br0').css('color', colorButtonActive);
 
     isActive = true;
 }
