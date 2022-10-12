@@ -78,7 +78,7 @@ div button {
 .buttons button {
 /*     padding-left: 2px;
     padding-right: 2px; */
-    padding: 2px;
+    padding: 2px 4px;
 }
 
 .buttons-top-left {
