@@ -467,7 +467,7 @@ function setTopLeftValue(val){
         } else {
             // Vis indikator på varme...
             $("#value-tl").css('color', colorValueOn);
-            $("#value-tl").text('.');
+            $("#value-tl").text('H');
         }
 
     } else {
@@ -483,7 +483,7 @@ function setTopRightValue(val){
             hideTopRightValue(); 
         } else {
             $("#value-tr").css('color', colorValueOn);
-            $("#value-tr").text('.');
+            $("#value-tr").text('H');
         }
 
     } else {
@@ -499,7 +499,7 @@ function setBottomLeftValue(val){
             hideBottomLeftValue();
         } else {
             $("#value-bl").css('color', colorValueOn);
-            $("#value-bl").text('.');
+            $("#value-bl").text('H');
         }
 
     } else {
@@ -515,7 +515,7 @@ function setBottomRightValue(val){
             hideBottomRightValue();
         } else {
             $("#value-br").css('color', colorValueOn);
-            $("#value-br").text('.');
+            $("#value-br").text('H');
         }
 
     } else {

@@ -5,7 +5,13 @@
     margin: 0;
     padding: 0; */
 
-    font-family: "Arial", sans-serif;
+    /* font-family: "Arial", sans-serif; */
+
+    @font-face {
+        font-family: 'digitalFont';
+        src: url(digital-7.ttf) format('truetype');
+      }
+
     font-size: 1.1rem;
     margin: 0;
     padding: 0;
@@ -27,7 +33,7 @@ body {
 
 div button {
     background-color: black;
-    color: gray;
+    color: #808080;
 }
 
 .container {
@@ -43,6 +49,12 @@ div button {
     width: 700px;
 }
 
+#kokeplater {
+    border: 15px;
+    border-color: #393939;
+    border-style: solid;
+}
+
 .values {
     position: absolute;
     color: #111111; /* See body - background-color */
@@ -50,23 +62,31 @@ div button {
 }
 
 .values-top-left {
-    left: 325px;
-    bottom: 130px;
+    /* left: 325px;
+    bottom: 130px; */
+    left: 340px;
+    bottom: 145px;
 }
 
 .values-top-right {
-    left: 360px;
-    bottom: 130px;
+    /* left: 360px;
+    bottom: 130px; */
+    left: 380px;
+    bottom: 145px;
 }
 
 .values-bottom-left {
-    left: 325px;
-    bottom: 90px;
+    /* left: 325px;
+    bottom: 90px; */
+    left: 340px;
+    bottom: 105px;
 }
 
 .values-bottom-right {
-    left: 360px;
-    bottom: 90px;
+    /* left: 360px;
+    bottom: 90px; */
+    left: 380px;
+    bottom: 105px;
 }
 
 .buttons {
@@ -83,26 +103,26 @@ div button {
 
 .buttons-top-left {
     /* position: absolute; */
-    left: 95px;
-    bottom: 140px;
+    left: 120px;
+    bottom: 155px;
 }
 
 .buttons-top-right {
     /* position: absolute; */
-    left: 410px;
-    bottom: 140px;
+    left: 420px;
+    bottom: 155px;
 }
 
 .buttons-bottom-left {
     /* position: absolute; */
-    left: 95px;
-    bottom: 80px;
+    left: 120px;
+    bottom: 95px;
 }
 
 .buttons-bottom-right {
     /* position: absolute; */
-    left: 410px;
-    bottom: 80px;
+    left: 420px;
+    bottom: 95px;
 }
 
 .bottom-buttons {
@@ -113,11 +133,17 @@ div button {
     border-color: red;
     border-style: dashed; */
 
-    height: 32px;
-    width: 96px;
+/*     height: 32px;
+    width: 96px; */
 
-    left: 300px;
-    bottom: 10px;
+/*     left: 300px;
+    bottom: 10px; */
+
+    height: 28px;
+    width: 75px;
+
+    left: 625px;
+    bottom: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -160,8 +186,8 @@ div button {
 
     /* width: 200px; */
 
-    bottom: 10px;
-    left: 700px;
+    bottom: 50px;
+    left: 800px;
 
     display: flex;
     flex-direction: row;
