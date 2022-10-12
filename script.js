@@ -428,8 +428,6 @@ function turnOffButtons(){
 
 function turnOn(){
     turnOnButtons();
-    // $("#power-switch").attr('src', 'power-switch-lime.png');
-    // $("#lock").attr('src', 'padlock-gray.png');
 
     $("#power-indicator").attr('src', 'circle-small-red.png');
 
@@ -445,8 +443,6 @@ function turnOn(){
 function turnOff(){
     turnOffButtons();
     hideValues();
-    // $("#power-switch").attr('src', 'power-switch-white.png');
-    // $("#lock").attr('src', 'padlock-white.png');
 
     $("#power-indicator").attr('src', 'circle-small.png');
 
@@ -455,17 +451,11 @@ function turnOff(){
 
 function lock(){
     isLocked = true;
-    // $("#power-switch").attr('src', 'power-switch-gray.png');
-    // $("#lock").attr('src', 'padlock-lime.png');
-
     $("#lock-indicator").attr('src', 'circle-small-red.png');
 }
 
 function unlock(){
     isLocked = false;
-    // $("#power-switch").attr('src', 'power-switch-white.png');
-    // $("#lock").attr('src', 'padlock-white.png');
-
     $("#lock-indicator").attr('src', 'circle-small.png');
 }
 
@@ -480,12 +470,7 @@ function setTopLeftValue(val){
             $("#value-tl").text('.');
         }
 
-        // hideTopLeftValue();
-        // $("#value-tl").css('color', 'black');
     } else {
-        // $("#value-tl").css('color', 'red');
-
-        // $("#value-tl").css('color', 'tomato');
         $("#value-tl").css('color', colorValueOn);
         $("#value-tl").text(val);
     }
@@ -501,11 +486,7 @@ function setTopRightValue(val){
             $("#value-tr").text('.');
         }
 
-        // hideTopRightValue();
-        // $("#value-tr").css('color', 'black');
     } else {
-        // $("#value-tr").css('color', 'red');
-        // $("#value-tr").css('color', 'tomato');
         $("#value-tr").css('color', colorValueOn);
         $("#value-tr").text(val);
     }
@@ -521,11 +502,7 @@ function setBottomLeftValue(val){
             $("#value-bl").text('.');
         }
 
-        // hideBottomLeftValue();
-        // $("#value-bl").css('color', 'black');
     } else {
-        // $("#value-bl").css('color', 'red');
-        // $("#value-bl").css('color', 'tomato');
         $("#value-bl").css('color', colorValueOn);
         $("#value-bl").text(val);
     }
@@ -541,36 +518,28 @@ function setBottomRightValue(val){
             $("#value-br").text('.');
         }
 
-        // hideBottomRightValue();
-        // $("#value-br").css('color', 'black');
     } else {
-        // $("#value-br").css('color', 'red');
-        // $("#value-br").css('color', 'tomato');
         $("#value-br").css('color', colorValueOn);
         $("#value-br").text(val);
     }
 }
 
 function hideTopLeftValue(){
-    // $("#value-tl").css('color', 'black');
     $("#value-tl").css('color', colorBackground);
     $("#value-tl").text('');
 }
 
 function hideTopRightValue(){
-    // $("#value-tr").css('color', 'black');
     $("#value-tr").css('color', colorBackground);
     $("#value-tr").text('');
 }
 
 function hideBottomLeftValue(){
-    // $("#value-bl").css('color', 'black');
     $("#value-bl").css('color', colorBackground);
     $("#value-bl").text('');
 }
 
 function hideBottomRightValue(){
-    // $("#value-br").css('color', 'black');
     $("#value-br").css('color', colorBackground);
     $("#value-tr").text('');
 }
@@ -580,20 +549,11 @@ function hideValues(){
     hideTopRightValue();
     hideBottomLeftValue();
     hideBottomRightValue();
-    // $("#value-tl").css('color', 'black');
-    // $("#value-tr").css('color', 'black');
-    // $("#value-bl").css('color', 'black');
-    // $("#value-br").css('color', 'black');
 }
 
 function electricityOn(){
     $("#plug").attr('src', 'rounded-plug-yellow.png');
     $("#plug-desc").text("Power is on");
-
-    // $("#power-switch").attr('src', 'power-switch-white.png');
-    // $("#lock").attr('src', 'padlock-white.png');
-
-    // turnOnButtons();
 
     electricityIsOn = true;
 }
@@ -601,9 +561,6 @@ function electricityOn(){
 function electricityOff(){
     $("#plug").attr('src', 'rounded-plug-gray.png');
     $("#plug-desc").text("Power is off");
-
-    // $("#power-switch").attr('src', 'power-switch-gray.png');
-    // $("#lock").attr('src', 'padlock-gray.png');
 
     $("#power-indicator").attr('src', 'circle-small.png');
     $("#lock-indicator").attr('src', 'circle-small.png');
