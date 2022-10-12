@@ -63,28 +63,28 @@ div button {
 .values-top-left {
     /* left: 325px;
     bottom: 130px; */
-    left: 340px;
+    left: 325px;
     bottom: 145px;
 }
 
 .values-top-right {
     /* left: 360px;
     bottom: 130px; */
-    left: 380px;
+    left: 370px;
     bottom: 145px;
 }
 
 .values-bottom-left {
     /* left: 325px;
     bottom: 90px; */
-    left: 340px;
+    left: 325px;
     bottom: 105px;
 }
 
 .values-bottom-right {
     /* left: 360px;
     bottom: 90px; */
-    left: 380px;
+    left: 370px;
     bottom: 105px;
 }
 
@@ -97,31 +97,32 @@ div button {
 .buttons button {
 /*     padding-left: 2px;
     padding-right: 2px; */
-    padding: 2px 4px;
+    padding: 4px 6px;
+    font-size: 1.2rem;
 }
 
 .buttons-top-left {
     /* position: absolute; */
-    left: 120px;
-    bottom: 155px;
+    left: 100px;
+    bottom: 150px;
 }
 
 .buttons-top-right {
     /* position: absolute; */
-    left: 420px;
-    bottom: 155px;
+    left: 405px;
+    bottom: 150px;
 }
 
 .buttons-bottom-left {
     /* position: absolute; */
-    left: 120px;
-    bottom: 95px;
+    left: 100px;
+    bottom: 90px;
 }
 
 .buttons-bottom-right {
     /* position: absolute; */
-    left: 420px;
-    bottom: 95px;
+    left: 405px;
+    bottom: 90px;
 }
 
 .bottom-buttons {
@@ -141,8 +142,8 @@ div button {
     height: 28px;
     width: 75px;
 
-    left: 625px;
-    bottom: 50px;
+    left: 600px;
+    bottom: 45px;
 
     display: flex;
     justify-content: space-between;
@@ -185,7 +186,7 @@ div button {
 
     /* width: 200px; */
 
-    bottom: 50px;
+    bottom: 40px;
     left: 800px;
 
     display: flex;
