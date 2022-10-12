@@ -353,58 +353,6 @@ $(document).ready(function(){
 
 });
 
-// function resetTopLeft(){
-//     $('#tl0').css('color', 'white');
-//     $('#tl1').css('color', 'white');
-//     $('#tl2').css('color', 'white');
-//     $('#tl3').css('color', 'white');
-//     $('#tl4').css('color', 'white');
-//     $('#tl5').css('color', 'white');
-//     $('#tl6').css('color', 'white');
-//     $('#tl7').css('color', 'white');
-//     $('#tl8').css('color', 'white');
-//     $('#tl9').css('color', 'white');
-// }
-
-// function resetTopRight(){
-//     $('#tr0').css('color', 'white');
-//     $('#tr1').css('color', 'white');
-//     $('#tr2').css('color', 'white');
-//     $('#tr3').css('color', 'white');
-//     $('#tr4').css('color', 'white');
-//     $('#tr5').css('color', 'white');
-//     $('#tr6').css('color', 'white');
-//     $('#tr7').css('color', 'white');
-//     $('#tr8').css('color', 'white');
-//     $('#tr9').css('color', 'white');
-// }
-
-// function resetBottomLeft(){
-//     $('#bl0').css('color', 'white');
-//     $('#bl1').css('color', 'white');
-//     $('#bl2').css('color', 'white');
-//     $('#bl3').css('color', 'white');
-//     $('#bl4').css('color', 'white');
-//     $('#bl5').css('color', 'white');
-//     $('#bl6').css('color', 'white');
-//     $('#bl7').css('color', 'white');
-//     $('#bl8').css('color', 'white');
-//     $('#bl9').css('color', 'white');
-// }
-
-// function resetBottomRight(){
-//     $('#br0').css('color', 'white');
-//     $('#br1').css('color', 'white');
-//     $('#br2').css('color', 'white');
-//     $('#br3').css('color', 'white');
-//     $('#br4').css('color', 'white');
-//     $('#br5').css('color', 'white');
-//     $('#br6').css('color', 'white');
-//     $('#br7').css('color', 'white');
-//     $('#br8').css('color', 'white');
-//     $('#br9').css('color', 'white');
-// }
-
 // Kan velge farge:
 function setColorsTopLeft(color){
     $('#tl0').css('color', color);
@@ -458,23 +406,9 @@ function setColorsBottomRight(color){
     $('#br9').css('color', color);
 }
 
-// 
-
-function resetAll(){
-    resetTopLeft();
-    resetTopRight();
-    resetBottomLeft();
-    resetBottomRight();
-}
-
 // When the power is on, all buttons are white by default.
 
 function turnOnButtons(){
-    // resetTopLeft();
-    // resetTopRight();
-    // resetBottomLeft();
-    // resetBottomRight();
-
     setColorsTopLeft(colorButtonOn);
     setColorsTopRight(colorButtonOn);
     setColorsBottomLeft(colorButtonOn);
@@ -490,49 +424,6 @@ function turnOffButtons(){
     setColorsBottomLeft(colorButtonOff);
     setColorsBottomRight(colorButtonOff);
 
-    // $('#tl0').css('color', 'grey');
-    // $('#tl1').css('color', 'grey');
-    // $('#tl2').css('color', 'grey');
-    // $('#tl3').css('color', 'grey');
-    // $('#tl4').css('color', 'grey');
-    // $('#tl5').css('color', 'grey');
-    // $('#tl6').css('color', 'grey');
-    // $('#tl7').css('color', 'grey');
-    // $('#tl8').css('color', 'grey');
-    // $('#tl9').css('color', 'grey');
-
-    // $('#tr0').css('color', 'grey');
-    // $('#tr1').css('color', 'grey');
-    // $('#tr2').css('color', 'grey');
-    // $('#tr3').css('color', 'grey');
-    // $('#tr4').css('color', 'grey');
-    // $('#tr5').css('color', 'grey');
-    // $('#tr6').css('color', 'grey');
-    // $('#tr7').css('color', 'grey');
-    // $('#tr8').css('color', 'grey');
-    // $('#tr9').css('color', 'grey');
-
-    // $('#bl0').css('color', 'grey');
-    // $('#bl1').css('color', 'grey');
-    // $('#bl2').css('color', 'grey');
-    // $('#bl3').css('color', 'grey');
-    // $('#bl4').css('color', 'grey');
-    // $('#bl5').css('color', 'grey');
-    // $('#bl6').css('color', 'grey');
-    // $('#bl7').css('color', 'grey');
-    // $('#bl8').css('color', 'grey');
-    // $('#bl9').css('color', 'grey');
-
-    // $('#br0').css('color', 'grey');
-    // $('#br1').css('color', 'grey');
-    // $('#br2').css('color', 'grey');
-    // $('#br3').css('color', 'grey');
-    // $('#br4').css('color', 'grey');
-    // $('#br5').css('color', 'grey');
-    // $('#br6').css('color', 'grey');
-    // $('#br7').css('color', 'grey');
-    // $('#br8').css('color', 'grey');
-    // $('#br9').css('color', 'grey');
 }
 
 function turnOn(){
