@@ -15,6 +15,11 @@ p {
     color: gray;
 }
 
+button {
+    margin: 0 auto;
+    padding: 0;
+}
+
 body {
     background-color: #111111;
 }
@@ -65,6 +70,14 @@ div button {
 
 .buttons {
     position: absolute;
+
+    display: flex;
+}
+
+.buttons button {
+/*     padding-left: 2px;
+    padding-right: 2px; */
+    padding: 2px;
 }
 
 .buttons-top-left {
