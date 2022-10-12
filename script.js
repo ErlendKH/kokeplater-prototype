@@ -54,6 +54,12 @@ let electricityIsOn = true;
 let isActive = false;
 let isLocked = false;
 
+// Simulere "er varm"
+let topLeftWasOn = false;
+let topRightWasOn = false;
+let bottomLeftWasOn =  false;
+let bottomRightWasOn = false;
+
 $(document).ready(function(){
     console.log('document ready triggered.');
 
@@ -148,6 +154,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl1').css('color', 'red');
         setTopLeftValue('1');
+        topLeftWasOn = true;
     })
     $("#tl2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -155,6 +162,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl2').css('color', 'red');
         setTopLeftValue('2');
+        topLeftWasOn = true;
     })
     $("#tl3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -162,6 +170,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl3').css('color', 'red');
         setTopLeftValue('3');
+        topLeftWasOn = true;
     })
     $("#tl4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -169,6 +178,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl4').css('color', 'red');
         setTopLeftValue('4');
+        topLeftWasOn = true;
     })
     $("#tl5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -176,6 +186,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl5').css('color', 'red');
         setTopLeftValue('5');
+        topLeftWasOn = true;
     })
     $("#tl6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -183,6 +194,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl6').css('color', 'red');
         setTopLeftValue('6');
+        topLeftWasOn = true;
     })
     $("#tl7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -190,6 +202,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl7').css('color', 'red');
         setTopLeftValue('7');
+        topLeftWasOn = true;
     })
     $("#tl8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -197,6 +210,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl8').css('color', 'red');
         setTopLeftValue('8');
+        topLeftWasOn = true;
     })
     $("#tl9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -204,6 +218,7 @@ $(document).ready(function(){
         setColorsTopLeft(colorButtonOn);
         $('#tl9').css('color', 'red');
         setTopLeftValue('9');
+        topLeftWasOn = true;
     })
 
     // Top Right:
@@ -221,6 +236,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr1').css('color', 'red');
         setTopRightValue('1');
+        topRightWasOn = true;
     })
     $("#tr2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -228,6 +244,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr2').css('color', 'red');
         setTopRightValue('2');
+        topRightWasOn = true;
     })
     $("#tr3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -235,6 +252,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr3').css('color', 'red');
         setTopRightValue('3');
+        topRightWasOn = true;
     })
     $("#tr4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -242,6 +260,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr4').css('color', 'red');
         setTopRightValue('4');
+        topRightWasOn = true;
     })
     $("#tr5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -249,6 +268,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr5').css('color', 'red');
         setTopRightValue('5');
+        topRightWasOn = true;
     })
     $("#tr6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -256,6 +276,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr6').css('color', 'red');
         setTopRightValue('6');
+        topRightWasOn = true;
     })
     $("#tr7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -263,6 +284,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr7').css('color', 'red');
         setTopRightValue('7');
+        topRightWasOn = true;
     })
     $("#tr8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -270,6 +292,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr8').css('color', 'red');
         setTopRightValue('8');
+        topRightWasOn = true;
     })
     $("#tr9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -277,6 +300,7 @@ $(document).ready(function(){
         setColorsTopRight(colorButtonOn);
         $('#tr9').css('color', 'red');
         setTopRightValue('9');
+        topRightWasOn = true;
     })
 
     // Bottom Left:
@@ -294,6 +318,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl1').css('color', 'red');
         setBottomLeftValue('1');
+        bottomLeftWasOn = true;
     })
     $("#bl2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -301,6 +326,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl2').css('color', 'red');
         setBottomLeftValue('2');
+        bottomLeftWasOn = true;
     })
     $("#bl3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -308,6 +334,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl3').css('color', 'red');
         setBottomLeftValue('3');
+        bottomLeftWasOn = true;
     })
     $("#bl4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -315,6 +342,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl4').css('color', 'red');
         setBottomLeftValue('4');
+        bottomLeftWasOn = true;
     })
     $("#bl5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -322,6 +350,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl5').css('color', 'red');
         setBottomLeftValue('5');
+        bottomLeftWasOn = true;
     })
     $("#bl6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -329,6 +358,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl6').css('color', 'red');
         setBottomLeftValue('6');
+        bottomLeftWasOn = true;
     })
     $("#bl7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -336,6 +366,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl7').css('color', 'red');
         setBottomLeftValue('7');
+        bottomLeftWasOn = true;
     })
     $("#bl8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -343,6 +374,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl8').css('color', 'red');
         setBottomLeftValue('8');
+        bottomLeftWasOn = true;
     })
     $("#bl9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -350,6 +382,7 @@ $(document).ready(function(){
         setColorsBottomLeft(colorButtonOn);
         $('#bl9').css('color', 'red');
         setBottomLeftValue('9');
+        bottomLeftWasOn = true;
     })
 
     // Bottom Right:
@@ -367,6 +400,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br1').css('color', 'red');
         setBottomRightValue('1');
+        bottomRightWasOn = true;
     })
     $("#br2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -374,6 +408,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br2').css('color', 'red');
         setBottomRightValue('2');
+        bottomRightWasOn = true;
     })
     $("#br3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -381,6 +416,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br3').css('color', 'red');
         setBottomRightValue('3');
+        bottomRightWasOn = true;
     })
     $("#br4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -388,6 +424,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br4').css('color', 'red');
         setBottomRightValue('4');
+        bottomRightWasOn = true;
     })
     $("#br5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -395,6 +432,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br5').css('color', 'red');
         setBottomRightValue('5');
+        bottomRightWasOn = true;
     })
     $("#br6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -402,6 +440,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br6').css('color', 'red');
         setBottomRightValue('6');
+        bottomRightWasOn = true;
     })
     $("#br7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -409,6 +448,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br7').css('color', 'red');
         setBottomRightValue('7');
+        bottomRightWasOn = true;
     })
     $("#br8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -416,6 +456,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br8').css('color', 'red');
         setBottomRightValue('8');
+        bottomRightWasOn = true;
     })
     $("#br9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
@@ -423,6 +464,7 @@ $(document).ready(function(){
         setColorsBottomRight(colorButtonOn);
         $('#br9').css('color', 'red');
         setBottomRightValue('9');
+        bottomRightWasOn = true;
     })
 
 });
@@ -654,7 +696,16 @@ function unlock(){
 
 function setTopLeftValue(val){
     if(val == '0'){
-        hideTopLeftValue();
+
+        if(!topLeftWasOn){
+            hideTopLeftValue();
+        } else {
+            // Vis indikator på varme...
+            $("#value-tl").css('color', colorValueOn);
+            $("#value-tl").text('.');
+        }
+
+        // hideTopLeftValue();
         // $("#value-tl").css('color', 'black');
     } else {
         // $("#value-tl").css('color', 'red');
@@ -667,7 +718,15 @@ function setTopLeftValue(val){
 
 function setTopRightValue(val){
     if(val == '0'){
-        hideTopRightValue();
+
+        if(!topRightWasOn){
+            hideTopRightValue(); 
+        } else {
+            $("#value-tr").css('color', colorValueOn);
+            $("#value-tr").text('.');
+        }
+
+        // hideTopRightValue();
         // $("#value-tr").css('color', 'black');
     } else {
         // $("#value-tr").css('color', 'red');
@@ -679,7 +738,15 @@ function setTopRightValue(val){
 
 function setBottomLeftValue(val){
     if(val == '0'){
-        hideBottomLeftValue();
+
+        if(!bottomLeftWasOn){
+            hideBottomLeftValue();
+        } else {
+            $("#value-bl").css('color', colorValueOn);
+            $("#value-bl").text('.');
+        }
+
+        // hideBottomLeftValue();
         // $("#value-bl").css('color', 'black');
     } else {
         // $("#value-bl").css('color', 'red');
@@ -691,7 +758,15 @@ function setBottomLeftValue(val){
 
 function setBottomRightValue(val){
     if(val == '0'){
-        hideBottomRightValue();
+
+        if(!bottomRightWasOn){
+            hideBottomRightValue();
+        } else {
+            $("#value-br").css('color', colorValueOn);
+            $("#value-br").text('.');
+        }
+
+        // hideBottomRightValue();
         // $("#value-br").css('color', 'black');
     } else {
         // $("#value-br").css('color', 'red');
@@ -764,5 +839,10 @@ function electricityOff(){
     electricityIsOn = false;
     isActive = false;
     isLocked = false;
+
+    topLeftWasOn = false;
+    topRightWasOn = false;
+    bottomLeftWasOn = false;
+    bottomRightWasOn = false;
 }
 
