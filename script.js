@@ -3,7 +3,8 @@
 let colorBackground = '#111111';
 // let colorButtonActive = 'red';
 let colorButtonActive = 'tomato';
-let colorButtonOn = 'darkgray';
+// let colorButtonOn = 'darkgray';
+let colorButtonOn = 'grey';
 let colorButtonOff = 'grey';
 // let colorValueOn = 'tomato';
 let colorValueOn = 'red';
