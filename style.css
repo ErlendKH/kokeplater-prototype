@@ -39,7 +39,8 @@ div button {
 
 .values {
     position: absolute;
-    color: black;
+    color: #111111; /* See body - background-color */
+    /* color: black; */
 }
 
 .values-top-left {
@@ -108,7 +109,13 @@ div button {
     justify-content: space-between;
 }
 
-.bottom-buttons img {
+.bottom-buttons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-buttons div img {
     height: 100%;
     width: auto;
 }
@@ -119,6 +126,16 @@ div button {
 
 #lock {
 
+}
+
+#power-indicator {
+    height: 75%;
+    width: auto;
+}
+
+#lock-indicator {
+    height: 75%;
+    width: auto;
 }
 
 .plug {

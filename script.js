@@ -42,6 +42,14 @@
 // let br8;
 // let br9;
 
+// Variable for colors?
+let colorBackground = '#111111';
+let colorButtonActive = 'red';
+// let colorButtonOn = '#darkred';
+let colorButtonOn = 'darkgray';
+let colorButtonOff = 'grey';
+let colorValueOn = 'tomato';
+
 let electricityIsOn = true;
 let isActive = false;
 let isLocked = false;
@@ -129,61 +137,71 @@ $(document).ready(function(){
     $('#tl0').click(function(){
         // console.log('clicked on tl0.');
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl0').css('color', 'red');
         setTopLeftValue('0');
     })
     $("#tl1").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl1').css('color', 'red');
         setTopLeftValue('1');
     })
     $("#tl2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl2').css('color', 'red');
         setTopLeftValue('2');
     })
     $("#tl3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl3').css('color', 'red');
         setTopLeftValue('3');
     })
     $("#tl4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl4').css('color', 'red');
         setTopLeftValue('4');
     })
     $("#tl5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl5').css('color', 'red');
         setTopLeftValue('5');
     })
     $("#tl6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl6').css('color', 'red');
         setTopLeftValue('6');
     })
     $("#tl7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl7').css('color', 'red');
         setTopLeftValue('7');
     })
     $("#tl8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl8').css('color', 'red');
         setTopLeftValue('8');
     })
     $("#tl9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopLeft();
+        // resetTopLeft();
+        setColorsTopLeft(colorButtonOn);
         $('#tl9').css('color', 'red');
         setTopLeftValue('9');
     })
@@ -192,61 +210,71 @@ $(document).ready(function(){
 
     $("#tr0").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr0').css('color', 'red');
         setTopRightValue('0');
     })
     $("#tr1").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr1').css('color', 'red');
         setTopRightValue('1');
     })
     $("#tr2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr2').css('color', 'red');
         setTopRightValue('2');
     })
     $("#tr3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr3').css('color', 'red');
         setTopRightValue('3');
     })
     $("#tr4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr4').css('color', 'red');
         setTopRightValue('4');
     })
     $("#tr5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr5').css('color', 'red');
         setTopRightValue('5');
     })
     $("#tr6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr6').css('color', 'red');
         setTopRightValue('6');
     })
     $("#tr7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr7').css('color', 'red');
         setTopRightValue('7');
     })
     $("#tr8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr8').css('color', 'red');
         setTopRightValue('8');
     })
     $("#tr9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetTopRight();
+        // resetTopRight();
+        setColorsTopRight(colorButtonOn);
         $('#tr9').css('color', 'red');
         setTopRightValue('9');
     })
@@ -255,61 +283,71 @@ $(document).ready(function(){
 
     $("#bl0").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl0').css('color', 'red');
         setBottomLeftValue('0');
     })
     $("#bl1").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl1').css('color', 'red');
         setBottomLeftValue('1');
     })
     $("#bl2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl2').css('color', 'red');
         setBottomLeftValue('2');
     })
     $("#bl3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl3').css('color', 'red');
         setBottomLeftValue('3');
     })
     $("#bl4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl4').css('color', 'red');
         setBottomLeftValue('4');
     })
     $("#bl5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl5').css('color', 'red');
         setBottomLeftValue('5');
     })
     $("#bl6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl6').css('color', 'red');
         setBottomLeftValue('6');
     })
     $("#bl7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl7').css('color', 'red');
         setBottomLeftValue('7');
     })
     $("#bl8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl8').css('color', 'red');
         setBottomLeftValue('8');
     })
     $("#bl9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomLeft();
+        // resetBottomLeft();
+        setColorsBottomLeft(colorButtonOn);
         $('#bl9').css('color', 'red');
         setBottomLeftValue('9');
     })
@@ -318,65 +356,74 @@ $(document).ready(function(){
 
     $("#br0").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br0').css('color', 'red');
         setBottomRightValue('0');
     })
     $("#br1").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br1').css('color', 'red');
         setBottomRightValue('1');
     })
     $("#br2").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br2').css('color', 'red');
         setBottomRightValue('2');
     })
     $("#br3").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br3').css('color', 'red');
         setBottomRightValue('3');
     })
     $("#br4").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br4').css('color', 'red');
         setBottomRightValue('4');
     })
     $("#br5").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br5').css('color', 'red');
         setBottomRightValue('5');
     })
     $("#br6").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br6').css('color', 'red');
         setBottomRightValue('6');
     })
     $("#br7").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br7').css('color', 'red');
         setBottomRightValue('7');
     })
     $("#br8").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br8').css('color', 'red');
         setBottomRightValue('8');
     })
     $("#br9").click(function(){
         if(!electricityIsOn || !isActive || isLocked) return;
-        resetBottomRight();
+        // resetBottomRight();
+        setColorsBottomRight(colorButtonOn);
         $('#br9').css('color', 'red');
         setBottomRightValue('9');
     })
-
 
 });
 
@@ -432,6 +479,59 @@ function resetBottomRight(){
     $('#br9').css('color', 'white');
 }
 
+// Kan velge farge:
+function setColorsTopLeft(color){
+    $('#tl0').css('color', color);
+    $('#tl1').css('color', color);
+    $('#tl2').css('color', color);
+    $('#tl3').css('color', color);
+    $('#tl4').css('color', color);
+    $('#tl5').css('color', color);
+    $('#tl6').css('color', color);
+    $('#tl7').css('color', color);
+    $('#tl8').css('color', color);
+    $('#tl9').css('color', color);
+}
+
+function setColorsTopRight(color){
+    $('#tr0').css('color', color);
+    $('#tr1').css('color', color);
+    $('#tr2').css('color', color);
+    $('#tr3').css('color', color);
+    $('#tr4').css('color', color);
+    $('#tr5').css('color', color);
+    $('#tr6').css('color', color);
+    $('#tr7').css('color', color);
+    $('#tr8').css('color', color);
+    $('#tr9').css('color', color);
+}
+
+function setColorsBottomLeft(color){
+    $('#bl0').css('color', color);
+    $('#bl1').css('color', color);
+    $('#bl2').css('color', color);
+    $('#bl3').css('color', color);
+    $('#bl4').css('color', color);
+    $('#bl5').css('color', color);
+    $('#bl6').css('color', color);
+    $('#bl7').css('color', color);
+    $('#bl8').css('color', color);
+    $('#bl9').css('color', color);
+}
+
+function setColorsBottomRight(color){
+    $('#br0').css('color', color);
+    $('#br1').css('color', color);
+    $('#br2').css('color', color);
+    $('#br3').css('color', color);
+    $('#br4').css('color', color);
+    $('#br5').css('color', color);
+    $('#br6').css('color', color);
+    $('#br7').css('color', color);
+    $('#br8').css('color', color);
+    $('#br9').css('color', color);
+}
+
 // 
 
 function resetAll(){
@@ -444,65 +544,77 @@ function resetAll(){
 // When the power is on, all buttons are white by default.
 
 function turnOnButtons(){
-    resetTopLeft();
-    resetTopRight();
-    resetBottomLeft();
-    resetBottomRight();
+    // resetTopLeft();
+    // resetTopRight();
+    // resetBottomLeft();
+    // resetBottomRight();
+
+    setColorsTopLeft(colorButtonOn);
+    setColorsTopRight(colorButtonOn);
+    setColorsBottomLeft(colorButtonOn);
+    setColorsBottomRight(colorButtonOn);
 }
 
 // When the power is off, all buttons are gray.
 
 function turnOffButtons(){
 
-    $('#tl0').css('color', 'grey');
-    $('#tl1').css('color', 'grey');
-    $('#tl2').css('color', 'grey');
-    $('#tl3').css('color', 'grey');
-    $('#tl4').css('color', 'grey');
-    $('#tl5').css('color', 'grey');
-    $('#tl6').css('color', 'grey');
-    $('#tl7').css('color', 'grey');
-    $('#tl8').css('color', 'grey');
-    $('#tl9').css('color', 'grey');
+    setColorsTopLeft(colorButtonOff);
+    setColorsTopRight(colorButtonOff);
+    setColorsBottomLeft(colorButtonOff);
+    setColorsBottomRight(colorButtonOff);
 
-    $('#tr0').css('color', 'grey');
-    $('#tr1').css('color', 'grey');
-    $('#tr2').css('color', 'grey');
-    $('#tr3').css('color', 'grey');
-    $('#tr4').css('color', 'grey');
-    $('#tr5').css('color', 'grey');
-    $('#tr6').css('color', 'grey');
-    $('#tr7').css('color', 'grey');
-    $('#tr8').css('color', 'grey');
-    $('#tr9').css('color', 'grey');
+    // $('#tl0').css('color', 'grey');
+    // $('#tl1').css('color', 'grey');
+    // $('#tl2').css('color', 'grey');
+    // $('#tl3').css('color', 'grey');
+    // $('#tl4').css('color', 'grey');
+    // $('#tl5').css('color', 'grey');
+    // $('#tl6').css('color', 'grey');
+    // $('#tl7').css('color', 'grey');
+    // $('#tl8').css('color', 'grey');
+    // $('#tl9').css('color', 'grey');
 
-    $('#bl0').css('color', 'grey');
-    $('#bl1').css('color', 'grey');
-    $('#bl2').css('color', 'grey');
-    $('#bl3').css('color', 'grey');
-    $('#bl4').css('color', 'grey');
-    $('#bl5').css('color', 'grey');
-    $('#bl6').css('color', 'grey');
-    $('#bl7').css('color', 'grey');
-    $('#bl8').css('color', 'grey');
-    $('#bl9').css('color', 'grey');
+    // $('#tr0').css('color', 'grey');
+    // $('#tr1').css('color', 'grey');
+    // $('#tr2').css('color', 'grey');
+    // $('#tr3').css('color', 'grey');
+    // $('#tr4').css('color', 'grey');
+    // $('#tr5').css('color', 'grey');
+    // $('#tr6').css('color', 'grey');
+    // $('#tr7').css('color', 'grey');
+    // $('#tr8').css('color', 'grey');
+    // $('#tr9').css('color', 'grey');
 
-    $('#br0').css('color', 'grey');
-    $('#br1').css('color', 'grey');
-    $('#br2').css('color', 'grey');
-    $('#br3').css('color', 'grey');
-    $('#br4').css('color', 'grey');
-    $('#br5').css('color', 'grey');
-    $('#br6').css('color', 'grey');
-    $('#br7').css('color', 'grey');
-    $('#br8').css('color', 'grey');
-    $('#br9').css('color', 'grey');
+    // $('#bl0').css('color', 'grey');
+    // $('#bl1').css('color', 'grey');
+    // $('#bl2').css('color', 'grey');
+    // $('#bl3').css('color', 'grey');
+    // $('#bl4').css('color', 'grey');
+    // $('#bl5').css('color', 'grey');
+    // $('#bl6').css('color', 'grey');
+    // $('#bl7').css('color', 'grey');
+    // $('#bl8').css('color', 'grey');
+    // $('#bl9').css('color', 'grey');
+
+    // $('#br0').css('color', 'grey');
+    // $('#br1').css('color', 'grey');
+    // $('#br2').css('color', 'grey');
+    // $('#br3').css('color', 'grey');
+    // $('#br4').css('color', 'grey');
+    // $('#br5').css('color', 'grey');
+    // $('#br6').css('color', 'grey');
+    // $('#br7').css('color', 'grey');
+    // $('#br8').css('color', 'grey');
+    // $('#br9').css('color', 'grey');
 }
 
 function turnOn(){
     turnOnButtons();
-    $("#power-switch").attr('src', 'power-switch-lime.png');
-    $("#lock").attr('src', 'padlock-gray.png');
+    // $("#power-switch").attr('src', 'power-switch-lime.png');
+    // $("#lock").attr('src', 'padlock-gray.png');
+
+    $("#power-indicator").attr('src', 'circle-small-red.png');
 
     // By default, set all values to 0:
     $('#tl0').css('color', 'red');
@@ -516,22 +628,28 @@ function turnOn(){
 function turnOff(){
     turnOffButtons();
     hideValues();
-    $("#power-switch").attr('src', 'power-switch-white.png');
-    $("#lock").attr('src', 'padlock-white.png');
+    // $("#power-switch").attr('src', 'power-switch-white.png');
+    // $("#lock").attr('src', 'padlock-white.png');
+
+    $("#power-indicator").attr('src', 'circle-small.png');
 
     isActive = false;
 }
 
 function lock(){
     isLocked = true;
-    $("#power-switch").attr('src', 'power-switch-gray.png');
-    $("#lock").attr('src', 'padlock-lime.png');
+    // $("#power-switch").attr('src', 'power-switch-gray.png');
+    // $("#lock").attr('src', 'padlock-lime.png');
+
+    $("#lock-indicator").attr('src', 'circle-small-red.png');
 }
 
 function unlock(){
     isLocked = false;
-    $("#power-switch").attr('src', 'power-switch-white.png');
-    $("#lock").attr('src', 'padlock-white.png');
+    // $("#power-switch").attr('src', 'power-switch-white.png');
+    // $("#lock").attr('src', 'padlock-white.png');
+
+    $("#lock-indicator").attr('src', 'circle-small.png');
 }
 
 function setTopLeftValue(val){
@@ -540,7 +658,9 @@ function setTopLeftValue(val){
         // $("#value-tl").css('color', 'black');
     } else {
         // $("#value-tl").css('color', 'red');
-        $("#value-tl").css('color', 'tomato');
+
+        // $("#value-tl").css('color', 'tomato');
+        $("#value-tl").css('color', colorValueOn);
         $("#value-tl").text(val);
     }
 }
@@ -551,7 +671,8 @@ function setTopRightValue(val){
         // $("#value-tr").css('color', 'black');
     } else {
         // $("#value-tr").css('color', 'red');
-        $("#value-tr").css('color', 'tomato');
+        // $("#value-tr").css('color', 'tomato');
+        $("#value-tr").css('color', colorValueOn);
         $("#value-tr").text(val);
     }
 }
@@ -562,7 +683,8 @@ function setBottomLeftValue(val){
         // $("#value-bl").css('color', 'black');
     } else {
         // $("#value-bl").css('color', 'red');
-        $("#value-bl").css('color', 'tomato');
+        // $("#value-bl").css('color', 'tomato');
+        $("#value-bl").css('color', colorValueOn);
         $("#value-bl").text(val);
     }
 }
@@ -573,28 +695,33 @@ function setBottomRightValue(val){
         // $("#value-br").css('color', 'black');
     } else {
         // $("#value-br").css('color', 'red');
-        $("#value-br").css('color', 'tomato');
+        // $("#value-br").css('color', 'tomato');
+        $("#value-br").css('color', colorValueOn);
         $("#value-br").text(val);
     }
 }
 
 function hideTopLeftValue(){
-    $("#value-tl").css('color', 'black');
+    // $("#value-tl").css('color', 'black');
+    $("#value-tl").css('color', colorBackground);
     $("#value-tl").text('');
 }
 
 function hideTopRightValue(){
-    $("#value-tr").css('color', 'black');
+    // $("#value-tr").css('color', 'black');
+    $("#value-tr").css('color', colorBackground);
     $("#value-tr").text('');
 }
 
 function hideBottomLeftValue(){
-    $("#value-bl").css('color', 'black');
+    // $("#value-bl").css('color', 'black');
+    $("#value-bl").css('color', colorBackground);
     $("#value-bl").text('');
 }
 
 function hideBottomRightValue(){
-    $("#value-br").css('color', 'black');
+    // $("#value-br").css('color', 'black');
+    $("#value-br").css('color', colorBackground);
     $("#value-tr").text('');
 }
 
@@ -613,8 +740,8 @@ function electricityOn(){
     $("#plug").attr('src', 'rounded-plug-yellow.png');
     $("#plug-desc").text("Power is on");
 
-    $("#power-switch").attr('src', 'power-switch-white.png');
-    $("#lock").attr('src', 'padlock-white.png');
+    // $("#power-switch").attr('src', 'power-switch-white.png');
+    // $("#lock").attr('src', 'padlock-white.png');
 
     // turnOnButtons();
 
@@ -625,8 +752,11 @@ function electricityOff(){
     $("#plug").attr('src', 'rounded-plug-gray.png');
     $("#plug-desc").text("Power is off");
 
-    $("#power-switch").attr('src', 'power-switch-gray.png');
-    $("#lock").attr('src', 'padlock-gray.png');
+    // $("#power-switch").attr('src', 'power-switch-gray.png');
+    // $("#lock").attr('src', 'padlock-gray.png');
+
+    $("#power-indicator").attr('src', 'circle-small.png');
+    $("#lock-indicator").attr('src', 'circle-small.png');
 
     turnOffButtons();
     hideValues();
